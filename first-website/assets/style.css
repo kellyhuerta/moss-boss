@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'Cassia';
+	src: url('cassia.woff2') format('woff2'),
+		url('cassia.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	background-color: #f1f4d9;
+	font-size: 18px;
+	font-family: "Cassia", serif;
+}
+
+p {
+	background-color: #cddbdc;
+	color: #1e4e25;
+	padding: 10px;
+	margin: 2px;
+	border: 4px solid;
+	border-radius: 10px;
+}
+
+h1 {
+	color: #aa5b0c;
+	border-top: 10px double;
+	border-bottom: 10px double;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Barlow Condensed", sans-serif;
+}
+
+strong {
+	color: #775b44;
+	text-decoration: underline;
+}
+
+/* img elements are inline by default, only change
+width or height preferably - width */
+
+img {
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+/*
+#special {
+    background-color: #e9c595;
+}
+	*/
+
+.special {
+	background-color: #e9c595;
+	border: 4px inset #9a8263;
+	font-family: "Bellota Text", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*
+stylesheets specificity
+external < embedded < inline
+*/
+
+header {
+	margin: 20px;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+	background-color: #7b967b;
+}
+
+/*
+identifier specificity
+tag < class < id
+*/
+
+main {
+	margin: 20px;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+	background-color: #a18671;
+}
+
+.class {
+	background-color: #e9967a;
+}
+
+#id {
+	background-color: #a7a0d2;
+}
+
+/*
+Location specificity
+higher < lower
+*/
+
+footer {
+	margin: 20px;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+	background-color: #8cadad;
+}
+
+footer {
+	background-color: #d87093;
+}

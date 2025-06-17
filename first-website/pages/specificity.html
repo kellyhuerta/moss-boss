@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Specificity</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@0;1&family=Bellota+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../assets/style.css" />
+		<style>
+			/* embedded css */
+			header {
+				background-color: #d4a649;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS Specificity</h1>
+		<ul>
+			<li>
+				<a href="../index.html">Home</a>
+			</li>
+		</ul>
+		<!-- inline css -->
+		<header style="background-color: #c36060">
+			Stylesheet Specificity
+		</header>
+
+		<main class="class" id="id">Identifier Specificity</main>
+
+		<footer>Location Specificity</footer>
+	</body>
+</html>
