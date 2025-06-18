@@ -1,0 +1,124 @@
+img {
+	max-width: 150%;
+}
+
+.content-box {
+	background-color: #d1caae;
+	width: 200px;
+	height: 200px;
+	padding: 50px;
+	border: 10px solid #cf6767;
+	margin: 50px;
+}
+
+.border-box {
+	background-color: #d1caae;
+	width: 200px;
+	height: 200px;
+	padding: 50px;
+	border: 10px solid #cf6767;
+	margin: 50px;
+
+	box-sizing: border-box;
+}
+
+/* will take 100% browser width by default */
+
+.block {
+	background-color: #cfb333;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* will take only the width of the space
+can't have width or height.
+padding works differently */
+
+.inline {
+	background-color: #6497c0;
+	padding: 5px;
+	margin: 10px;
+}
+
+.inline-block {
+	background-color: #e38db8;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	margin: 10px;
+
+	display: inline-block;
+}
+
+.relative {
+	background-color: #dd8a3c;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+.square {
+	background-color: #769976;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #093c09;
+	margin: 20px;
+}
+
+.relative {
+	background-color: darkkhaki;
+	position: relative;
+	bottom: 50px;
+	right: 50px;
+}
+
+.fixed {
+	background-color: #5a3f4c;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.absolute {
+	background-color: darkkhaki;
+	position: absolute;
+	top: 120px;
+	right: 60px;
+
+	z-index: 9;
+}
+
+.container {
+	background-color: lightgray;
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	/* in order to position children
+absolutely, the container needs to
+be given a position other than
+static */
+	position: relative;
+}
+
+.contained-absolute {
+	background-color: #ae8ac7;
+	width: 100px;
+	height: 100px;
+	/* to position a contained element
+relative to its parent, the parent
+needs to be given a position other
+than static */
+	position: absolute;
+	top: 0;
+	right: -100px;
+}
+
+.sticky {
+background-color: rgb(222, 199, 216);
+position: sticky;
+top: 0;
+}
