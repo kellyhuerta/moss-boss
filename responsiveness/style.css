@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: lightcyan;
+}
+
+img {
+	max-width: 100%;
+}
+
+.flexible {
+	background: lavender;
+	padding: 10px;
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
+	body {
+		background: lightgoldenrodyellow;
+	}
+	
+	.flexible {
+		max-width: 100%;
+	}
+}
+
+
+/* these styles will only take effect on
+screens smaller than 900px */
+
+@media screen and (max-width: 900px) {
+	body {
+		background: lightgreen;
+	}
+
+	.flexible {
+		border: 1px solid;
+		max-width: 80%;
+	}
+}
